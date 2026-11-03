@@ -1,9 +1,9 @@
 # Networks
 
-The network decides whether a control system feels instant or flaky, so I design it before anything else goes in.
-I build on UniFi, and on Araknis and WattBox when a job calls for Snap One gear.
+The network decides whether a control system feels instant or flaky, so we design it before anything else goes in.
+We build on UniFi, and on Araknis and WattBox when a job calls for Snap One gear.
 
-## How I lay one out
+## How we lay one out
 
 - **Separate networks by job.** Control and AV share a network with the Savant host. Cameras get their own.
   IoT gear and guests are walled off, and the control network only gets what it needs from the rest.
@@ -11,8 +11,8 @@ I build on UniFi, and on Araknis and WattBox when a job calls for Snap One gear.
   multicast video). That decides the layout first, not last.
 - **Addresses that don't move.** Reservations for everything the control system talks to, and a DHCP pool that
   stays out of their way.
-- **Remote work without mix-ups.** Over remote access, two houses can look alike on the network, so I confirm
-  which one I'm actually on before touching anything off-site.
+- **Remote work without mix-ups.** Over remote access, two houses can look alike on the network, so we confirm
+  which one we're actually on before touching anything off-site.
 - **Documented and labeled.** Ports, reservations and rules written down, so the next visit is a quick fix and not
   a rebuild.
 

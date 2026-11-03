@@ -1,11 +1,11 @@
 # Savant integrations
 
 Savant ships profiles for a lot of gear, but not all of it, and some of what it ships doesn't behave the way a
-homeowner expects. These are the integrations I built to close that gap. Unless a note says otherwise, every one
+homeowner expects. These are the integrations we built to close that gap. Unless a note says otherwise, every one
 below is running on a live Savant system.
 
 Most of them are a custom Component Profile, the driver Savant loads for a device. A few also need a small helper
-on the Savant host, for devices that talk in a way a profile can't. I only add one of those when nothing inside
+on the Savant host, for devices that talk in a way a profile can't. We only add one of those when nothing inside
 Savant can do the job.
 
 The profiles carry Sparky Venture Labs as the manufacturer. They aren't published here.
@@ -22,7 +22,7 @@ The profiles carry Sparky Venture Labs as the manufacturer. They aren't publishe
   [Theory DLC-250.8 amplifier](#theory-dlc-2508-amplifier) · [Breaking a receiver audio loop](#breaking-a-receiver-audio-loop)
 - **Power and outdoor:** [Jandy AquaLink pool and spa](#jandy-aqualink-pool-and-spa) ·
   [UniFi PDU Pro outlets](#unifi-pdu-pro-outlets)
-- [Also](#also) · [How I build them](#how-i-build-them)
+- [Also](#also) · [How we build them](#how-we-build-them)
 
 ---
 
@@ -202,12 +202,12 @@ minutes afterward, so nobody can bounce a device over and over.
 - **OREI BKA-1 audio extractor:** a routing-only profile so Blueprint knows what the box passes. Built, not in a
   project yet.
 
-## How I build them
+## How we build them
 
 - Most profiles are generated from code and tested before they go near a house. Most of the hand-written ones
   have tests too.
 - A helper on the host only when nothing inside Savant can do the job.
-- Changes go into a house from its latest saved project, and get proved on the real equipment before I call them
+- Changes go into a house from its latest saved project, and get proved on the real equipment before we call them
   done.
 
 ---

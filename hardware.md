@@ -1,7 +1,7 @@
 # Hardware
 
-The physical side: boards I flash and wire, signal paths I untangle, racks, and the 3D printing that turned into
-an app.
+The physical side: boards we flash and wire, signal paths we untangle, racks, and the 3D printing that turned
+into an app.
 
 ## Garage door controller boards
 
@@ -25,7 +25,7 @@ the path. The Savant side is in [Savant integrations](savant.md#garage-doors-thr
 
 ## 3D printing
 
-I print on a Creality K2 Plus and Bambu Lab machines, and years of chasing first layers and stringing are what
+We print on a Creality K2 Plus and Bambu Lab machines, and years of chasing first layers and stringing are what
 [Printer Studio](https://apps.apple.com/us/app/printer-studio/id6779811553) is built on: starting settings for
 78 printers from 23 brands, 12 slicers and filament from more than 50 brands, on iPhone and iPad.
 

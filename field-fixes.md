@@ -12,7 +12,7 @@ services at all. SSH, ping and the network were all fine. Every room was dead.
 **What it was:** Savant Application Manager had been run on the host itself earlier that day, and it had emptied
 the runtime's system config. Nothing showed until the next upload, hours later, which is why it looked unrelated.
 
-**How it ended:** I put the system config back and the house came back up. The standing rule since: SAM and
+**How it ended:** We put the system config back and the house came back up. The standing rule since: SAM and
 Blueprint never run on a Pro Host.
 
 ---
@@ -22,7 +22,7 @@ Blueprint never run on a Pro Host.
 **What it looked like:** Savant suddenly couldn't turn the TVs on, and only a full system reboot brought them back.
 It looked like a network problem.
 
-**What it was:** Not the network. Savant's own record of the TVs' power state went stale and locked itself in. I
+**What it was:** Not the network. Savant's own record of the TVs' power state went stale and locked itself in. We
 tested and ruled out every plausible cause before settling on that.
 
 **How it ended:** A small service on the host now keeps Savant's power state honest, and the TVs stopped needing

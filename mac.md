@@ -1,6 +1,6 @@
 # Mac work
 
-Savant's older Pro Hosts are Macs, and my bench is a Mac, so a good share of this work is macOS.
+Savant's older Pro Hosts are Macs, and so is our bench, so a good share of this work is macOS.
 
 ## On Savant's Mac hosts
 
@@ -31,7 +31,7 @@ Savant's older Pro Hosts are Macs, and my bench is a Mac, so a good share of thi
 | Repo | What it is |
 |---|---|
 | [mac-automations](https://github.com/Sparky-Venture-Labs/mac-automations) | Two launchd + fswatch background jobs: unzip downloads with safety checks, and file screenshots and screen recordings by year and month |
-| [dot-files](https://github.com/Sparky-Venture-Labs/dot-files) | My Apple Silicon setup: zsh config, Brewfile, git config and macOS defaults |
+| [dot-files](https://github.com/Sparky-Venture-Labs/dot-files) | Our Apple Silicon Mac setup: zsh config, Brewfile, git config and macOS defaults |
 | [ios-build-scripts](https://github.com/Sparky-Venture-Labs/ios-build-scripts) | Build and run on a simulator by UDID, flatten App Store icons, and the XcodeGen keys that fix the tiny-window launch |
 
 ---
