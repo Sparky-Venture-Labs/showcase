@@ -34,7 +34,8 @@ The profiles carry Sparky Venture Labs as the manufacturer. They aren't publishe
 talking to whoever is at the door.
 
 **Built:** A door-station profile for the G4 Doorbell and a helper on the Savant host that handles the ring and the
-audio. The UniFi Access readers with cameras (UA G2 Pro, G6 Pro Entry) ring the same way.
+audio. The UniFi Access readers with cameras (UA G2 Pro, G6 Pro Entry) are set up as door stations the same
+way.
 
 **Result:** A press chimes the rooms you pick and rings every phone with the Savant app, even with the app closed.
 The Entry screen shows the door live, Tap to Talk is two-way, and the doorbell's package camera is its own camera
@@ -47,8 +48,8 @@ was actually locked.
 
 **Built:** A UniFi Access door profile, one per door or gate, plus door-station profiles for the Access readers.
 
-**Result:** A buzz-open from keypads, touch panels and the app that Access relocks on its own, and a lock tile that
-shows the real state. The readers ring the app, show their camera and buzz their own door.
+**Result:** A buzz-open from touch panels and the app that Access relocks on its own, and a lock tile that shows
+the real state. The readers show their camera in Savant and are set up to ring the app and buzz their own door.
 
 ### UniFi Protect cameras, live
 
@@ -91,10 +92,9 @@ within about three seconds.
 **Problem:** Some of the lights (DMX LED bars, DMX playbacks, switched plugs) were run by a QSC Q-SYS Core. Savant
 has no Q-SYS profile, and the Core's published controls don't report whether anything is on.
 
-**Built:** One profile that drives the Core's named controls as Savant lighting and keeps every button's state
-itself.
+**Built:** One profile that puts the Core's lights on Savant's lighting screens.
 
-**Result:** Presets, toggles and all on/off from Savant's lighting screens, with buttons that show the right state.
+**Result:** Presets, toggles and all on/off, with buttons that show the right state.
 
 ### Big Ass Fans i6
 
@@ -102,8 +102,8 @@ itself.
 
 **Built:** A profile that talks to each fan directly. Nothing running on the host.
 
-**Result:** Savant's native fan control (off, low, medium, high), a slider for all seven speeds, and auto, reverse
-and whoosh, with live feedback.
+**Result:** Savant's native fan control (off, low, medium, high), a slider for all seven speeds, plus auto, reverse
+and whoosh. Power and speed update live, even when someone uses the BAF app or the wall control.
 
 ### Bond TV lift
 
@@ -125,7 +125,8 @@ remote buttons outright.
 
 **Built:** Modified versions of Savant's own Sony BRAVIA profiles for the XR70, XR90 and X90L lines.
 
-**Result:** Power-on in about 2.5 seconds, the right volume, and a power check every 15 seconds.
+**Result:** Power-on in about 2.5 seconds, the right volume, and a TV someone switched off with its own remote
+comes back on at the next source pick.
 
 ### Samsung TV power and tokens
 
@@ -140,7 +141,8 @@ state honest.
 
 ### NovaStar LED walls
 
-**Problem:** LED video walls on a NovaStar COEX MX40 Pro controller had no Savant profile.
+**Problem:** Savant's own profile for the NovaStar COEX MX40 Pro did nothing useful on these LED wall controllers:
+power did nothing, and every input picked the same source.
 
 **Built:** A profile that makes the wall the room's display and talks to the controller's own API. Nothing running
 on the host.
@@ -178,8 +180,8 @@ exactly, names and order both. Later, a SavantOS update knocked pool and spa con
 **Built:** A reader that pulls the circuit names from iAqualink and a checker that compares them with the Savant
 project.
 
-**Result:** Savant's pool and spa screens match the controllers name for name and in the same order, every button
-proved with a live press on the equipment, and control back after the update.
+**Result:** Savant's pool and spa screens match the controllers name for name and in the same order, a live press
+on each controller proved the mapping, and control came back after the update.
 
 ### UniFi PDU Pro outlets
 
@@ -202,8 +204,8 @@ minutes afterward, so nobody can bounce a device over and over.
 
 ## How I build them
 
-- Most profiles are generated from code and tested before they go near a house. The hand-written ones have tests
-  too.
+- Most profiles are generated from code and tested before they go near a house. Most of the hand-written ones
+  have tests too.
 - A helper on the host only when nothing inside Savant can do the job.
 - Changes go into a house from its latest saved project, and get proved on the real equipment before I call them
   done.

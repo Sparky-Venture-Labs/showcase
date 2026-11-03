@@ -1,6 +1,7 @@
 # Hardware
 
-The physical side: boards I flash and wire, signal paths I untangle, and the 3D printing that turned into an app.
+The physical side: boards I flash and wire, signal paths I untangle, racks, and the 3D printing that turned into
+an app.
 
 ## Garage door controller boards
 
@@ -18,7 +19,7 @@ the path. The Savant side is in [Savant integrations](savant.md#garage-doors-thr
   route rooms into each other. Fixed in the design with no hardware change:
   [Breaking a receiver audio loop](savant.md#breaking-a-receiver-audio-loop).
 - **Audio extractors that Blueprint understands.** A routing-only profile for the OREI BKA-1 8K HDMI audio
-  extractor, so Blueprint knows which outputs carry what.
+  extractor, so Blueprint knows which outputs carry what. Built, not in a project yet.
 - **Racks built to be serviced.** Clean racks, cabling labeled at both ends, documented settings and remote
   monitoring, so a future fix is a quick visit.
 
@@ -27,11 +28,6 @@ the path. The Savant side is in [Savant integrations](savant.md#garage-doors-thr
 I print on a Creality K2 Plus and Bambu Lab machines, and years of chasing first layers and stringing are what
 [Printer Studio](https://apps.apple.com/us/app/printer-studio/id6779811553) is built on: starting settings for
 78 printers from 23 brands, 12 slicers and filament from more than 50 brands, on iPhone and iPad.
-
-## The bench
-
-ESP32, Raspberry Pi, Pico and Arduino boards for prototyping control hardware before it goes anywhere near a
-client's rack.
 
 ---
 

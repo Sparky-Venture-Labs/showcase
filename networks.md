@@ -11,8 +11,8 @@ I build on UniFi, and on Araknis and WattBox when a job calls for Snap One gear.
   multicast video). That decides the layout first, not last.
 - **Addresses that don't move.** Reservations for everything the control system talks to, and a DHCP pool that
   stays out of their way.
-- **Remote work that doesn't collide.** Remote access is set up so it can't overlap the house's own addressing, and
-  I confirm which network I'm actually on before touching anything off-site.
+- **Remote work without mix-ups.** Over remote access, two houses can look alike on the network, so I confirm
+  which one I'm actually on before touching anything off-site.
 - **Documented and labeled.** Ports, reservations and rules written down, so the next visit is a quick fix and not
   a rebuild.
 
